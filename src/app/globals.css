@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .amber-glow {
+    background-color: rgba(239, 159, 39, 0.12);
+  }
+  .amber-border {
+    border-color: rgba(239, 159, 39, 0.3);
+  }
+  .border-subtle {
+    border-color: rgba(255, 255, 255, 0.07);
+  }
+}
