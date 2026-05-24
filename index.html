@@ -3,245 +3,331 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mario Pel&aacute;ez | IA aplicada y software operativo</title>
+    <title>Mario Pel&aacute;ez | IA aplicada, software y automatizaci&oacute;n</title>
     <meta
       name="description"
-      content="Portafolio profesional de Mario Pel&aacute;ez: IA aplicada, automatizaci&oacute;n y software operativo para peque&ntilde;as y medianas empresas."
+      content="Portafolio de Mario Pel&aacute;ez: software operativo, automatizaciones e IA aplicada para peque&ntilde;as y medianas empresas."
     />
-    <meta name="theme-color" content="#101513" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#0f1714" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Mario Pel&aacute;ez">
-        <span class="brand-mark">MP</span>
-        <span>Mario Pel&aacute;ez</span>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">
+          <strong>Mario Pel&aacute;ez</strong>
+          <small>MejorIA / sistemas para pymes</small>
+        </span>
       </a>
-      <nav class="nav" aria-label="Principal">
-        <a href="#proyectos">Proyectos</a>
+
+      <nav class="nav" aria-label="Navegaci&oacute;n principal">
+        <a href="#demos">Demos</a>
+        <a href="#casos">Casos</a>
         <a href="#servicios">Servicios</a>
         <a href="#perfil">Perfil</a>
-        <a href="#contacto">Contacto</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="icon-action" href="assets/cv-mario-pelaez.pdf" download title="Descargar CV" aria-label="Descargar CV">
+          <span aria-hidden="true">CV</span>
+        </a>
+        <a class="header-cta" href="#contacto">Agenda una revisi&oacute;n</a>
+      </div>
     </header>
 
     <main id="inicio">
       <section class="hero">
-        <img
-          class="hero-image"
-          src="assets/motowash-config.png"
-          alt="Interfaz de Moto Wash Manager"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Ingeniero de Sistemas | IA aplicada | MejorIA</p>
-          <h1>Construyo software operativo y automatizaciones con IA para negocios reales.</h1>
-          <p class="hero-copy">
-            Ayudo a pymes a pasar de cuadernos, Excel y WhatsApp a sistemas web con
-            datos, control de operaci&oacute;n, reportes y flujos inteligentes.
-          </p>
-          <div class="hero-actions" aria-label="Acciones principales">
-            <a class="button primary" href="#proyectos"><span aria-hidden="true">&darr;</span> Ver casos</a>
-            <a class="button secondary" href="#contacto"><span aria-hidden="true">&#9993;</span> Hablemos</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="band intro-band" aria-label="Resumen profesional">
-        <div class="container intro-grid">
-          <article>
-            <p class="section-kicker">Enfoque actual</p>
-            <h2>IA aplicada, no IA decorativa.</h2>
-            <p>
-              Mi trabajo combina desarrollo web, Firebase, automatizaci&oacute;n,
-              bases de datos y modelos de lenguaje para crear herramientas que
-              mejoran procesos concretos: ventas, caja, citas, inventario,
-              clientes, reportes y tareas repetitivas.
+        <div class="hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Ingeniero de Sistemas / IA aplicada</p>
+            <h1>No vendo p&aacute;ginas. Construyo sistemas de trabajo para negocios que todav&iacute;a operan en desorden.</h1>
+            <p class="lead">
+              Ayudo a pymes a convertir cuadernos, hojas de Excel y chats sueltos en
+              software operativo: caja, &oacute;rdenes, clientes, inventario, reportes,
+              automatizaciones y asistentes con IA.
             </p>
-          </article>
-          <div class="signal-list" aria-label="Se&ntilde;ales de especialidad">
-            <span>Software a medida para pymes</span>
-            <span>Automatizaciones con n8n y APIs</span>
-            <span>Firebase, Firestore y hosting cloud</span>
-            <span>Agentes, MCP y tareas persistentes</span>
-          </div>
-        </div>
-      </section>
 
-      <section id="proyectos" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-kicker">Casos destacados</p>
-            <h2>Productos y laboratorios que muestran el enfoque.</h2>
-          </div>
-
-          <div class="project-feature">
-            <div class="project-copy">
-              <p class="status">Producto piloto casi listo</p>
-              <h3>Moto Wash Manager</h3>
-              <p>
-                Sistema web para lavaderos de motos en Medell&iacute;n. Gestiona
-                &oacute;rdenes en tiempo real, caja diaria, m&eacute;todos de pago,
-                equipo de lavadores, comisiones y configuraci&oacute;n comercial.
-              </p>
-              <dl class="facts">
-                <div>
-                  <dt>Stack</dt>
-                  <dd>React, TypeScript, Firebase, Firestore, Tailwind</dd>
-                </div>
-                <div>
-                  <dt>Rol</dt>
-                  <dd>Producto, desarrollo, datos, despliegue y oferta comercial</dd>
-                </div>
-                <div>
-                  <dt>Valor</dt>
-                  <dd>Convierte una operaci&oacute;n manual en un sistema medible</dd>
-                </div>
-              </dl>
-              <a class="text-link" href="https://demomotorwash.web.app/equipo" target="_blank" rel="noreferrer">
-                Abrir demo publicada <span aria-hidden="true">&nearr;</span>
+            <div class="hero-actions" aria-label="Acciones principales">
+              <a class="button primary" href="#demos">
+                <span aria-hidden="true">01</span>
+                Ver demos vivas
+              </a>
+              <a class="button ghost" href="assets/cv-mario-pelaez.pdf" download>
+                <span aria-hidden="true">PDF</span>
+                Descargar CV
               </a>
             </div>
-            <figure class="project-media">
-              <img src="assets/motowash-config.png" alt="Moto Wash Manager en ejecuci&oacute;n" />
-              <figcaption>Firebase Hosting, workspace demo y m&oacute;dulos operativos.</figcaption>
-            </figure>
+
+            <ul class="cred-row" aria-label="Credenciales resumidas">
+              <li>Firebase / Firestore</li>
+              <li>React / Next.js</li>
+              <li>n8n / APIs</li>
+              <li>Agentes / MCP</li>
+            </ul>
           </div>
 
-          <div class="project-grid">
-            <article class="project-card">
-              <p class="status">En desarrollo</p>
+          <div class="workbench" data-reveal>
+            <div class="workbench-top">
+              <span>MejorIA workspace</span>
+              <span class="pulse">en construcci&oacute;n activa</span>
+            </div>
+            <div class="ops-panel">
+              <div class="ops-title">
+                <span>Ruta de implementaci&oacute;n</span>
+                <strong>pymes</strong>
+              </div>
+              <div class="pipeline" aria-hidden="true">
+                <span style="--i: 1">Diagn&oacute;stico</span>
+                <span style="--i: 2">Flujo real</span>
+                <span style="--i: 3">MVP</span>
+                <span style="--i: 4">Datos</span>
+                <span style="--i: 5">Automatizaci&oacute;n</span>
+              </div>
+            </div>
+            <div class="metric-grid">
+              <div>
+                <small>Producto piloto</small>
+                <strong>Moto Wash</strong>
+                <span>lavaderos de motos</span>
+              </div>
+              <div>
+                <small>Sistema interno</small>
+                <strong>Coworking</strong>
+                <span>clientes, caja, contratos</span>
+              </div>
+              <div>
+                <small>Investigaci&oacute;n</small>
+                <strong>Agentes</strong>
+                <span>memoria, skills, tareas</span>
+              </div>
+            </div>
+            <div class="console" aria-label="Registro de trabajo">
+              <p><span>build</span> Dise&ntilde;ar herramienta seg&uacute;n operaci&oacute;n real</p>
+              <p><span>sync</span> Firestore + permisos por negocio</p>
+              <p><span>next</span> IA para reportes, seguimiento y soporte interno</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Propuesta de valor">
+        <div class="strip-track">
+          <span>software operativo</span>
+          <span>automatizaci&oacute;n</span>
+          <span>IA aplicada</span>
+          <span>datos para decidir</span>
+          <span>herramientas que el equipo usa</span>
+          <span>software operativo</span>
+          <span>automatizaci&oacute;n</span>
+          <span>IA aplicada</span>
+        </div>
+      </section>
+
+      <section id="demos" class="section demo-section">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Demos y accesos</p>
+          <h2>La web debe abrir puertas, no solo hablar bonito.</h2>
+          <p>
+            Esta secci&oacute;n funciona como vitrina viva: demos publicadas, productos
+            en desarrollo y laboratorios que iremos agregando con acceso claro.
+          </p>
+        </div>
+
+        <div class="demo-board">
+          <article class="demo-main" data-reveal>
+            <div class="demo-image">
+              <img src="assets/motowash-config.png" alt="Pantalla de configuraci&oacute;n de Moto Wash Manager" />
+            </div>
+            <div class="demo-content">
+              <span class="state ready">Demo publicada</span>
+              <h3>Moto Wash Manager</h3>
+              <p>
+                Sistema para lavaderos de motos: &oacute;rdenes, caja diaria,
+                pagos, lavadores, comisiones y oferta comercial lista para pilotos.
+              </p>
+              <div class="demo-actions">
+                <a class="button primary" href="https://demomotorwash.web.app/equipo" target="_blank" rel="noreferrer">
+                  Abrir demo
+                </a>
+                <a class="button light" href="mailto:myesidpelaez@gmail.com?subject=Quiero%20ver%20Moto%20Wash%20Manager">
+                  Pedir implementaci&oacute;n
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="demo-list" data-reveal>
+            <article>
+              <span class="state active">En desarrollo</span>
               <h3>Centro Coworking Riohacha</h3>
-              <p>
-                Sistema interno para clientes, contratos, caja, facturaci&oacute;n,
-                inventario, servicios y reportes operativos.
-              </p>
-              <span class="tag-row">Next.js &middot; Firebase &middot; PWA &middot; Recharts</span>
+              <p>Sistema interno para clientes, contratos, caja, facturaci&oacute;n e inventario.</p>
+              <a href="mailto:myesidpelaez@gmail.com?subject=Acceso%20demo%20Centro%20Coworking">Solicitar acceso</a>
             </article>
-            <article class="project-card">
-              <p class="status">Emprendimiento</p>
-              <h3>MejorIA</h3>
-              <p>
-                Marca de software a medida e IA pr&aacute;ctica para pymes que
-                necesitan organizar su operaci&oacute;n sin adoptar herramientas
-                complejas.
-              </p>
-              <span class="tag-row">Diagn&oacute;stico &middot; Producto &middot; Automatizaci&oacute;n</span>
-            </article>
-            <article class="project-card">
-              <p class="status">Laboratorio de investigaci&oacute;n</p>
+            <article>
+              <span class="state research">Laboratorio</span>
               <h3>Midas ViewBot</h3>
-              <p>
-                Plataforma de investigaci&oacute;n con datos de mercado, indicadores,
-                backtesting, risk engine y arquitectura documentada para agentes.
-              </p>
-              <span class="tag-row">Next.js &middot; FastAPI &middot; Python &middot; Backtesting</span>
+              <p>Investigaci&oacute;n con datos de mercado, backtesting, risk engine y documentaci&oacute;n t&eacute;cnica.</p>
+              <a href="mailto:myesidpelaez@gmail.com?subject=Demo%20Midas%20ViewBot">Ver estado</a>
             </article>
-            <article class="project-card">
-              <p class="status">Producto t&eacute;cnico</p>
-              <h3>TradingView Gratis</h3>
-              <p>
-                Interfaz de charts cripto con WebSocket de Binance, watchlist,
-                indicadores client-side y experiencia tipo plataforma.
-              </p>
-              <span class="tag-row">WebSocket &middot; Charts &middot; Zustand &middot; TypeScript</span>
+            <article>
+              <span class="state queued">Pr&oacute;ximo</span>
+              <h3>Agentes para pymes</h3>
+              <p>Asistentes con memoria, tareas programadas, MCP y flujos de seguimiento operativo.</p>
+              <a href="#investigacion">Leer enfoque</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="servicios" class="band">
-        <div class="container services-layout">
-          <div class="section-heading narrow">
-            <p class="section-kicker">Servicios</p>
-            <h2>Implementaci&oacute;n, consultor&iacute;a y formaci&oacute;n para adoptar IA.</h2>
+      <section id="casos" class="section case-section">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Casos de trabajo</p>
+          <h2>Problemas concretos, soluciones medibles.</h2>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-file" data-reveal>
+            <div class="case-number">01</div>
+            <h3>Moto Wash Manager</h3>
+            <p class="case-problem">Lavaderos que pierden control de servicios, pagos, empleados y caja diaria.</p>
+            <dl>
+              <div><dt>Construido</dt><dd>Ordenes en vivo, caja, comisiones, servicios, login y demo.</dd></div>
+              <div><dt>Estado</dt><dd>MVP avanzado con Firebase Hosting y Firestore.</dd></div>
+              <div><dt>Siguiente</dt><dd>Datos demo frescos, README comercial, repo Git y ajustes de lint.</dd></div>
+            </dl>
+          </article>
+
+          <article class="case-file" data-reveal>
+            <div class="case-number">02</div>
+            <h3>Centro Coworking</h3>
+            <p class="case-problem">Operaci&oacute;n interna con contratos, clientes, facturaci&oacute;n y servicios dispersos.</p>
+            <dl>
+              <div><dt>Construido</dt><dd>M&oacute;dulos para clientes, caja, contratos, inventario y servicios.</dd></div>
+              <div><dt>Estado</dt><dd>Producto interno en desarrollo con alta cobertura funcional.</dd></div>
+              <div><dt>Siguiente</dt><dd>Reducir deuda t&eacute;cnica, estabilizar build y preparar demo privada.</dd></div>
+            </dl>
+          </article>
+
+          <article class="case-file" data-reveal>
+            <div class="case-number">03</div>
+            <h3>MejorIA</h3>
+            <p class="case-problem">Pymes que necesitan software propio pero no pueden pagar ciclos largos de agencia.</p>
+            <dl>
+              <div><dt>Oferta</dt><dd>Diagn&oacute;stico, MVP operativo, capacitaci&oacute;n y soporte.</dd></div>
+              <div><dt>Nicho inicial</dt><dd>Lavaderos, negocios de servicios y operaciones locales.</dd></div>
+              <div><dt>Diferencia</dt><dd>Software adaptado al proceso real, no al rev&eacute;s.</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicios" class="section services-section">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">C&oacute;mo puedo ayudar</p>
+          <h2>Servicios pensados para empresas que quieren adoptar tecnolog&iacute;a sin humo.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Software a medida</h3>
+            <p>Sistemas web para operaciones diarias: agenda, caja, inventario, clientes, servicios y reportes.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Automatizaciones</h3>
+            <p>Flujos con n8n, APIs, Firebase y herramientas cloud para reducir tareas repetitivas.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>IA aplicada</h3>
+            <p>Asistentes internos, clasificaci&oacute;n de informaci&oacute;n, generaci&oacute;n de reportes y soporte operativo.</p>
+          </article>
+          <article data-reveal>
+            <span>04</span>
+            <h3>Talleres para equipos</h3>
+            <p>Formaci&oacute;n pr&aacute;ctica para que empleados usen IA con criterio, seguridad y casos reales.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="investigacion" class="section research-section">
+        <div class="research-layout">
+          <div data-reveal>
+            <p class="eyebrow">Investigaci&oacute;n actual</p>
+            <h2>Agentes persistentes para tareas que no caben en un solo prompt.</h2>
             <p>
-              Trabajo con negocios que necesitan resultados pr&aacute;cticos:
-              menos tareas manuales, mejor trazabilidad y herramientas que el
-              equipo pueda usar sin fricci&oacute;n.
+              Estoy investigando arquitecturas como Hermes Agent y OpenClaw:
+              memoria, skills, MCP, cron jobs, herramientas conectadas y ejecuci&oacute;n
+              de tareas consistentes. La meta no es presumir moda, sino llevarlo
+              a usos pr&aacute;cticos: seguimiento comercial, reportes recurrentes,
+              asistentes de soporte y monitoreo de procesos.
             </p>
           </div>
-          <div class="service-list">
-            <article>
-              <h3>Software operativo a medida</h3>
-              <p>Sistemas web para caja, agenda, stock, clientes, servicios y reportes.</p>
-            </article>
-            <article>
-              <h3>Automatizaciones e IA aplicada</h3>
-              <p>Flujos con n8n, APIs, asistentes internos y procesos asistidos por modelos.</p>
-            </article>
-            <article>
-              <h3>Talleres y consultor&iacute;a</h3>
-              <p>Capacitaci&oacute;n para equipos que quieren adoptar IA con criterio y seguridad.</p>
-            </article>
+
+          <div class="research-map" data-reveal aria-label="Mapa de investigaci&oacute;n">
+            <div><span>input</span><strong>Necesidad del negocio</strong></div>
+            <div><span>agent</span><strong>Plan + memoria + herramientas</strong></div>
+            <div><span>workflow</span><strong>n8n / API / Firebase</strong></div>
+            <div><span>output</span><strong>Tarea ejecutada y trazable</strong></div>
           </div>
         </div>
       </section>
 
-      <section id="perfil" class="section">
-        <div class="container profile-grid">
-          <div>
-            <p class="section-kicker">Perfil</p>
-            <h2>Base t&eacute;cnica, criterio de negocio y aprendizaje constante.</h2>
+      <section id="perfil" class="section profile-section">
+        <div class="profile-layout">
+          <div data-reveal>
+            <p class="eyebrow">Perfil profesional</p>
+            <h2>Un perfil joven, pero con direcci&oacute;n clara.</h2>
             <p>
-              Soy Ingeniero de Sistemas egresado de la Universidad de La Guajira.
-              Mi experiencia conecta datos, automatizaci&oacute;n, desarrollo web y
-              operaci&oacute;n de negocios peque&ntilde;os. Hoy mi foco est&aacute; en IA
-              aplicada, agentes, sistemas persistentes y software que resuelve
-              procesos reales.
+              Soy Ingeniero de Sistemas de la Universidad de La Guajira. Vengo de
+              datos, procesos y automatizaci&oacute;n, y hoy estoy enfocando mi trabajo
+              en IA aplicada y sistemas web para operaciones reales.
+            </p>
+            <p>
+              Mi ventaja no es decir que s&eacute; todas las tecnolog&iacute;as: es entender
+              el problema del negocio, construir una primera versi&oacute;n usable y
+              mejorarla con feedback.
             </p>
           </div>
-          <div class="credential-panel">
-            <h3>Formaci&oacute;n y evidencia</h3>
+
+          <aside class="profile-aside" data-reveal>
+            <h3>Credenciales que s&iacute; suman</h3>
             <ul>
               <li>Ingenier&iacute;a de Sistemas, Universidad de La Guajira.</li>
               <li>Diplomado en Inteligencia de Negocios y Miner&iacute;a de Datos.</li>
-              <li>Implementaci&oacute;n de soluciones de IA para eficiencia empresarial, SENA.</li>
+              <li>IA para eficiencia competitiva empresarial, SENA.</li>
               <li>Experiencia en datos, reportes, procesos y entornos corporativos.</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="band lab-band">
-        <div class="container lab-grid">
-          <div>
-            <p class="section-kicker">Investigaci&oacute;n activa</p>
-            <h2>Agentes, memoria, herramientas y tareas consistentes.</h2>
-          </div>
-          <p>
-            Estoy explorando arquitecturas como Hermes Agent y OpenClaw:
-            agentes autoalojados, skills, MCP, memoria, cron jobs y ejecuci&oacute;n
-            de tareas persistentes. La meta es llevar esas ideas a casos
-            pr&aacute;cticos para empresas peque&ntilde;as: seguimiento comercial,
-            soporte interno, reportes autom&aacute;ticos y asistentes operativos.
-          </p>
+            <a class="button light full" href="assets/cv-mario-pelaez.pdf" download>Descargar hoja de vida</a>
+          </aside>
         </div>
       </section>
 
       <section id="contacto" class="contact-section">
-        <div class="container contact-box">
-          <p class="section-kicker">Contacto</p>
-          <h2>Hablemos de una implementaci&oacute;n concreta.</h2>
+        <div class="contact-panel" data-reveal>
+          <p class="eyebrow">Siguiente paso</p>
+          <h2>Mu&eacute;strame tu proceso actual y dise&ntilde;amos la primera versi&oacute;n.</h2>
           <p>
-            Si tu negocio sigue dependiendo de cuadernos, Excel o mensajes
-            dispersos, puedo ayudarte a dise&ntilde;ar una primera versi&oacute;n
-            funcional y medible.
+            Podemos empezar con un diagn&oacute;stico corto: qu&eacute; haces manualmente,
+            qu&eacute; datos pierdes, qu&eacute; reportes necesitas y qu&eacute; se puede automatizar primero.
           </p>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:myesidpelaez@gmail.com"><span aria-hidden="true">&#9993;</span> Escribir correo</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/mario-yesid-pelaez-sanchez-111b16242" target="_blank" rel="noreferrer">
-              <span aria-hidden="true">&nearr;</span> LinkedIn
-            </a>
+            <a class="button primary" href="mailto:myesidpelaez@gmail.com?subject=Diagnostico%20MejorIA">Escribir por correo</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/mario-yesid-pelaez-sanchez-111b16242" target="_blank" rel="noreferrer">Ver LinkedIn</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>Mario Pel&aacute;ez</span>
-      <span>IA aplicada, automatizaci&oacute;n y software operativo.</span>
+      <span>Mario Pel&aacute;ez / MejorIA</span>
+      <span>Software operativo, automatizaci&oacute;n e IA aplicada.</span>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js?v=2"></script>
   </body>
 </html>

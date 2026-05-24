@@ -1,13 +1,18 @@
 # Mario Pelaez Portfolio
 
-Portafolio profesional enfocado en IA aplicada, automatizacion y software operativo para pymes.
+Portafolio profesional enfocado en IA aplicada, automatizacion, demos vivas y software operativo para pymes.
 
 ## Estructura
 
 - `index.html`: contenido principal.
 - `styles.css`: sistema visual responsive.
 - `script.js`: comportamiento minimo.
-- `assets/`: imagenes del portafolio.
+- `assets/`: imagenes del portafolio y CV descargable.
+
+## Enlaces importantes
+
+- Demo principal: https://demomotorwash.web.app/equipo
+- CV descargable: `assets/cv-mario-pelaez.pdf`
 
 ## Vista local
 
