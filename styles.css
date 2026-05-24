@@ -404,7 +404,7 @@ h1 {
 .surface-topline,
 .surface-hero,
 .surface-metrics,
-.signal-chart,
+.process-list,
 .agent-row {
   position: relative;
   z-index: 2;
@@ -424,6 +424,7 @@ h1 {
 .surface-topline strong {
   color: #fff;
   font-size: 11px;
+  text-align: right;
 }
 
 .surface-hero {
@@ -453,7 +454,7 @@ h1 {
   display: block;
   margin: 12px 0 8px;
   color: #fff;
-  font-size: 66px;
+  font-size: 62px;
   font-weight: 900;
   letter-spacing: -0.08em;
   line-height: 0.9;
@@ -484,31 +485,50 @@ h1 {
 
 .surface-metrics strong {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: -0.05em;
 }
 
-.signal-chart {
-  height: 92px;
-  display: flex;
-  align-items: end;
-  gap: 7px;
+.process-list {
+  display: grid;
+  gap: 8px;
   margin-top: 12px;
+  margin-bottom: 0;
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: rgba(3, 6, 12, 0.5);
+  list-style: none;
 }
 
-.signal-chart span {
-  flex: 1;
-  height: var(--h);
-  min-height: 18px;
-  border-radius: 999px 999px 2px 2px;
-  background: linear-gradient(180deg, #b7c6df, #2860d8 72%, #10295c);
-  opacity: 0.84;
-  animation: barBreath 4.2s ease-in-out infinite;
-  animation-delay: calc(var(--h) * -0.018);
+.process-list li {
+  display: grid;
+  grid-template-columns: 9px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 9px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.process-list li > span {
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border: 1px solid rgba(215, 223, 238, 0.78);
+  border-radius: 50%;
+  background: rgba(40, 96, 216, 0.45);
+}
+
+.process-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.process-list strong {
+  color: #fff;
 }
 
 .agent-row {
@@ -862,19 +882,6 @@ h1 {
   transform: translateY(0);
 }
 
-@keyframes barBreath {
-  0%,
-  100% {
-    transform: scaleY(0.9);
-    opacity: 0.68;
-  }
-
-  50% {
-    transform: scaleY(1.04);
-    opacity: 0.94;
-  }
-}
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(142, 167, 216, 0.55);
@@ -1019,10 +1026,6 @@ h1 {
 
   .surface-metrics {
     grid-template-columns: 1fr;
-  }
-
-  .signal-chart {
-    height: 76px;
   }
 
   .proof-strip,
