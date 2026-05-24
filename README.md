@@ -1,18 +1,19 @@
 # Mario Pelaez Portfolio
 
-Portafolio profesional enfocado en IA aplicada, agentic systems, demos vivas y software operativo para pymes.
+Portafolio profesional de Mario Pelaez / MejorIA Product Lab, enfocado en software a medida, dashboards, automatizacion e IA aplicada para pymes.
 
 ## Estructura
 
 - `index.html`: contenido principal.
-- `styles.css`: sistema visual responsive con estetica dark premium.
-- `script.js`: canvas animado, reveal on scroll y progreso de lectura.
+- `styles.css`: sistema visual responsive con estetica editorial dark, plata y azul profundo.
+- `script.js`: fondo animado sutil, menu movil, reveal on scroll y progreso de lectura.
 - `assets/`: imagenes del portafolio y CV descargable.
 
 ## Enlaces importantes
 
 - Demo principal: https://demomotorwash.web.app/equipo
 - CV descargable: `assets/cv-mario-pelaez.pdf`
+- WhatsApp: https://wa.me/573006707219
 
 ## Vista local
 
