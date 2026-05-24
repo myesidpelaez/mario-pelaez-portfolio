@@ -54,7 +54,7 @@ function drawNetwork() {
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < maxDistance) {
         const alpha = (1 - dist / maxDistance) * 0.18;
-        ctx.strokeStyle = `rgba(231, 201, 141, ${alpha})`;
+        ctx.strokeStyle = `rgba(69, 240, 255, ${alpha})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
@@ -66,8 +66,8 @@ function drawNetwork() {
 
   if (pointer.active) {
     const gradient = ctx.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 240);
-    gradient.addColorStop(0, "rgba(231, 201, 141, 0.15)");
-    gradient.addColorStop(0.48, "rgba(255, 114, 92, 0.08)");
+    gradient.addColorStop(0, "rgba(69, 240, 255, 0.14)");
+    gradient.addColorStop(0.48, "rgba(255, 93, 115, 0.08)");
     gradient.addColorStop(1, "rgba(8, 9, 13, 0)");
     ctx.fillStyle = gradient;
     ctx.fillRect(pointer.x - 240, pointer.y - 240, 480, 480);
