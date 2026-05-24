@@ -2,6 +2,7 @@ const root = document.documentElement;
 const canvas = document.getElementById("lab-canvas");
 const ctx = canvas?.getContext("2d");
 const revealItems = document.querySelectorAll("[data-reveal]");
+const siteHeader = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const menuClose = document.querySelector(".menu-close");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -127,6 +128,7 @@ function updateProgress() {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
   root.style.setProperty("--scroll-progress", `${progress}%`);
+  siteHeader?.classList.toggle("is-scrolled", window.scrollY > 12);
 }
 
 window.addEventListener("resize", () => {
