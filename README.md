@@ -1,12 +1,12 @@
 # Mario Pelaez Portfolio
 
-Portafolio profesional enfocado en IA aplicada, automatizacion, demos vivas y software operativo para pymes.
+Portafolio profesional enfocado en IA aplicada, agentic systems, demos vivas y software operativo para pymes.
 
 ## Estructura
 
 - `index.html`: contenido principal.
-- `styles.css`: sistema visual responsive.
-- `script.js`: comportamiento minimo.
+- `styles.css`: sistema visual responsive con estetica dark premium.
+- `script.js`: canvas animado, reveal on scroll y progreso de lectura.
 - `assets/`: imagenes del portafolio y CV descargable.
 
 ## Enlaces importantes
