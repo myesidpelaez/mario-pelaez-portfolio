@@ -268,10 +268,10 @@ def build_proyectos():
     # Nodum
     items += project_block(
         'Nodum — Gestión Institucional',
-        'Sector público · Hatonuevo, La Guajira · React + Firebase',
-        'Plataforma web para el municipio de Hatonuevo: coordina actividades institucionales, '
-        'asigna responsables, registra avances y genera bitácora de seguimiento. '
-        'Primer sistema digital de este tipo implementado en la entidad.',
+        'Propuesta institucional · Hatonuevo, La Guajira · React + Firebase',
+        'Plataforma web desarrollada para el municipio de Hatonuevo: coordina actividades '
+        'institucionales, asigna responsables, registra avances y genera bitácora de seguimiento. '
+        'Sistema funcional en producción, actualmente en proceso de negociación para adopción institucional.',
         url='nodum-62b50.web.app',
         status='prod'
     )
