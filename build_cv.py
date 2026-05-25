@@ -216,7 +216,7 @@ def build_header():
 def build_perfil():
     items = section_header('Perfil Profesional')
     items.append(Paragraph(
-        'Ingeniero de Sistemas (2025) con 3 años construyendo software que las personas realmente usan. '
+        'Ingeniero de Sistemas con 3 años construyendo software que las personas realmente usan. '
         'Fundador de <b>MejorIA Product Lab</b>: un laboratorio de producto que convierte operaciones caóticas de pymes '
         'en sistemas medibles y listos para crecer. '
         'Diseño aplicaciones web a medida con React + Firebase, automatizo flujos operativos con n8n y APIs, '
@@ -260,7 +260,7 @@ def build_proyectos():
         'En producción · Medellín · React + Firebase',
         'Sistema operativo completo para un lavadero de motos: órdenes de servicio, registro de lavadores, '
         'pagos y configuración del negocio en una sola interfaz. '
-        'Adoptado por el equipo completo en menos de 3 meses. Usuarios activos en producción.',
+        'Adoptado por el equipo completo en menos de 3 meses.',
         url='demomotorwash.web.app',
         status='prod'
     )
