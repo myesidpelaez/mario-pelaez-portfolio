@@ -870,7 +870,57 @@ h1 {
   background: linear-gradient(90deg, #2d6cff, #8ea7d8);
 }
 
+/* ─── SLIDE PLACEHOLDER (sin imagen) ──────────────────── */
+.project-media--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(40, 96, 216, 0.22), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(120, 80, 200, 0.12), transparent 50%),
+    linear-gradient(145deg, #0a0e1a, #05070c);
+  border-right: 1px solid var(--line);
+  min-height: 430px;
+}
 
+.project-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  padding: 40px 32px;
+  user-select: none;
+}
+
+.placeholder-label {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid rgba(255, 190, 50, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 190, 50, 0.08);
+  color: #f5c842;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.project-placeholder strong {
+  display: block;
+  color: rgba(244, 246, 251, 0.65);
+  font-size: clamp(26px, 3.5vw, 46px);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.project-placeholder small {
+  color: var(--dim);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
 
 .project-index {
   display: grid;
