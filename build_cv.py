@@ -186,13 +186,19 @@ def build_header():
         'Desarrollador de Software  ·  Sistemas con IA  ·  Automatización',
         STYLES['title_h']
     )
-    contact_para = Paragraph(
-        'Medellín, Antioquia  ·  300 670 7219  ·  myesidpelaez@gmail.com  ·  '
-        'linkedin.com/in/mario-yesid-pelaez  ·  github.com/myesidpelaez',
+    contact_line1 = Paragraph(
+        'WhatsApp  +57 300 670 7219  ·  '
+        '<link href="https://www.linkedin.com/in/mario-yesid-pelaez-sanchez-111b16242" color="#A5B4FC">'
+        'linkedin.com/in/mario-yesid-pelaez-sanchez</link>',
+        STYLES['contact_h']
+    )
+    contact_line2 = Paragraph(
+        '<link href="https://mejoria-2025.web.app" color="#A5B4FC">mejoria-2025.web.app</link>'
+        '  ·  Medellín, Colombia',
         STYLES['contact_h']
     )
 
-    header_content = [[name_para], [title_para], [Spacer(1, 2*mm)], [contact_para]]
+    header_content = [[name_para], [title_para], [Spacer(1, 2*mm)], [contact_line1], [contact_line2]]
     t = Table(header_content, colWidths=[CONTENT_W])
     t.setStyle(TableStyle([
         ('BACKGROUND',   (0,0), (-1,-1), C_DARK),
