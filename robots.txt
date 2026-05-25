@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mejoria-2025.web.app/sitemap.xml
