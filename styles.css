@@ -674,7 +674,9 @@ h1 {
 .resume-card,
 .contact-panel,
 .demo-copy,
-.demo-visual {
+.demo-visual,
+.project-card,
+.project-media {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
@@ -750,6 +752,74 @@ h1 {
   border-radius: 999px;
   color: rgba(244, 246, 251, 0.78);
   background: rgba(255, 255, 255, 0.028);
+}
+
+.demos-section .section-heading {
+  margin-bottom: 24px;
+}
+
+.project-showcase {
+  display: grid;
+  gap: 14px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 0;
+  overflow: hidden;
+}
+
+.project-card:nth-child(even) {
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+}
+
+.project-card:nth-child(even) .project-media {
+  order: 2;
+}
+
+.project-media {
+  overflow: hidden;
+  border-width: 0 1px 0 0;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: none;
+}
+
+.project-card:nth-child(even) .project-media {
+  border-width: 0 0 0 1px;
+}
+
+.project-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  object-position: left top;
+  filter: saturate(0.75) contrast(1.04);
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(24px, 4vw, 46px);
+}
+
+.project-body h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: clamp(32px, 4.4vw, 58px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.project-body p:not(.eyebrow) {
+  max-width: 610px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .agents-section {
@@ -1018,9 +1088,20 @@ h1 {
 
   .hero-shell,
   .demo-section,
+  .project-card,
+  .project-card:nth-child(even),
   .profile-section,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .project-card:nth-child(even) .project-media {
+    order: initial;
+  }
+
+  .project-media,
+  .project-card:nth-child(even) .project-media {
+    border-width: 0 0 1px 0;
   }
 
   .hero-shell {
@@ -1161,6 +1242,10 @@ h1 {
 
   .demo-visual img {
     min-height: 310px;
+  }
+
+  .project-media img {
+    min-height: 290px;
   }
 
   .demo-copy,

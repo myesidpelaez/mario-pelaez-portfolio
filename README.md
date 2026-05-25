@@ -12,6 +12,7 @@ Portafolio profesional de Mario Pelaez / MejorIA Product Lab, enfocado en softwa
 ## Enlaces importantes
 
 - Demo principal: https://demomotorwash.web.app/equipo
+- Nodum Hatonuevo: https://nodum-62b50.web.app/
 - CV descargable: `assets/cv-mario-pelaez.pdf`
 - WhatsApp: https://wa.me/573006707219
 
