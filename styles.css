@@ -1158,30 +1158,79 @@ h1 {
   overflow: hidden;
 }
 
-.contact-panel a {
-  display: grid;
-  gap: 7px;
-  min-height: 104px;
-  padding: 22px;
+.contact-panel a,
+.contact-panel .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 88px;
+  padding: 20px 22px;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
   transition: background 180ms ease;
 }
 
-.contact-panel a:last-child {
+.contact-panel a:last-child,
+.contact-panel .contact-item:last-child {
   border-bottom: 0;
 }
 
-.contact-panel a:hover {
-  background: rgba(40, 96, 216, 0.1);
+.contact-panel a:hover,
+.contact-panel .contact-item:hover {
+  background: rgba(40, 96, 216, 0.08);
+}
+
+/* Hover específico por red */
+.contact-item:has(.contact-icon--whatsapp):hover {
+  background: rgba(37, 211, 102, 0.07);
+}
+.contact-item:has(.contact-icon--linkedin):hover {
+  background: rgba(10, 102, 194, 0.1);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 180ms ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.08);
+}
+
+.contact-icon--whatsapp {
+  background: rgba(37, 211, 102, 0.14);
+  color: #25d366;
+}
+
+.contact-icon--email {
+  background: rgba(40, 96, 216, 0.14);
+  color: #8ea7d8;
+}
+
+.contact-icon--linkedin {
+  background: rgba(10, 102, 194, 0.14);
+  color: #0a66c2;
+}
+
+.contact-panel div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .contact-panel strong {
   color: #fff;
-  font-size: clamp(18px, 2.4vw, 27px);
-  letter-spacing: -0.04em;
+  font-size: clamp(15px, 2vw, 22px);
+  letter-spacing: -0.03em;
   word-break: break-word;
 }
+
 
 .footer {
   display: flex;
