@@ -139,3 +139,67 @@ window.addEventListener("scroll", updateProgress, { passive: true });
 
 setupCanvas();
 updateProgress();
+
+/* ─── DEMOS SLIDER ──────────────────────────────────────── */
+(function initDemosSlider() {
+  const track    = document.getElementById("demos-track");
+  const slides   = track ? Array.from(track.querySelectorAll(".slider-slide")) : [];
+  const dots     = Array.from(document.querySelectorAll(".slider-dot"));
+  const prevBtn  = document.getElementById("slider-prev");
+  const nextBtn  = document.getElementById("slider-next");
+  const counterEl = document.querySelector(".slider-current");
+  const totalEl   = document.querySelector(".slider-total");
+
+  if (!track || slides.length === 0) return;
+
+  let current = 0;
+  const total = slides.length;
+
+  if (totalEl) totalEl.textContent = String(total).padStart(2, "0");
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, total - 1));
+
+    // Move the track
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    // Update counter
+    if (counterEl) counterEl.textContent = String(current + 1).padStart(2, "0");
+
+    // Update dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("is-active", i === current);
+      dot.setAttribute("aria-selected", String(i === current));
+    });
+
+    // Update buttons
+    if (prevBtn) prevBtn.disabled = current === 0;
+    if (nextBtn) nextBtn.disabled = current === total - 1;
+  }
+
+  // Button listeners
+  prevBtn?.addEventListener("click", () => goTo(current - 1));
+  nextBtn?.addEventListener("click", () => goTo(current + 1));
+
+  // Dot listeners
+  dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
+
+  // Keyboard navigation (when focus is inside the slider)
+  document.querySelector(".demos-slider")?.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft")  { e.preventDefault(); goTo(current - 1); }
+    if (e.key === "ArrowRight") { e.preventDefault(); goTo(current + 1); }
+  });
+
+  // Touch / swipe support
+  let touchStartX = 0;
+  track.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener("touchend", (e) => {
+    const delta = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 48) goTo(delta > 0 ? current + 1 : current - 1);
+  }, { passive: true });
+
+  // Initialize
+  goTo(0);
+})();
