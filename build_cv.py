@@ -187,14 +187,18 @@ def build_header():
         STYLES['title_h']
     )
     contact_line1 = Paragraph(
-        'WhatsApp  +57 300 670 7219  ·  '
-        '<link href="https://www.linkedin.com/in/mario-yesid-pelaez-sanchez-111b16242" color="#A5B4FC">'
-        'linkedin.com/in/mario-yesid-pelaez-sanchez</link>',
+        'myesidpelaez@gmail.com  ·  '
+        'WhatsApp  +57 300 670 7219  ·  '
+        'Medellín, Colombia',
         STYLES['contact_h']
     )
     contact_line2 = Paragraph(
+        '<link href="https://www.linkedin.com/in/mario-yesid-pelaez-sanchez-111b16242" color="#A5B4FC">'
+        'linkedin.com/in/mario-yesid-pelaez-sanchez</link>'
+        '  ·  '
         '<link href="https://mejoria-2025.web.app" color="#A5B4FC">mejoria-2025.web.app</link>'
-        '  ·  Medellín, Colombia',
+        '  ·  '
+        '<link href="https://github.com/myesidpelaez" color="#A5B4FC">github.com/myesidpelaez</link>',
         STYLES['contact_h']
     )
 
@@ -273,7 +277,7 @@ def build_proyectos():
         'institucionales, asigna responsables, registra avances y genera bitácora de seguimiento. '
         'Sistema funcional en producción, actualmente en proceso de negociación para adopción institucional.',
         url='nodum-62b50.web.app',
-        status='prod'
+        status='dev'
     )
 
     # Centro Coworking
@@ -307,7 +311,7 @@ def build_experiencia():
     # Analista Sistemas / Coworking
     items.append(KeepTogether([
         Paragraph('Desarrollador Junior  —  Centro Coworking', STYLES['exp_role']),
-        Paragraph('Riohacha, La Guajira  ·  Ago 2025', STYLES['exp_company']),
+        Paragraph('Riohacha, La Guajira  ·  Ago 2025 – Presente', STYLES['exp_company']),
         bullet('Reemplazó flujos manuales en Excel por sistema digital de gestión de clientes y servicios.'),
         bullet('Dashboards en Looker Studio para seguimiento financiero y operativo.'),
         Spacer(1, 3*mm),
