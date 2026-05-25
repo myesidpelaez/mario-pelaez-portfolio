@@ -334,8 +334,14 @@ def build_educacion():
     items = section_header('Educación y Formación')
 
     rows = [
+        # Título universitario
         ('Ingeniería de Sistemas', 'Universidad de La Guajira', '2025'),
+        # Diplomados y especializaciones
         ('Diplomado en Inteligencia de Negocios y Minería de Datos', 'Uniguajira', '2025'),
+        # Cursos y formaciones SENA — más recientes primero
+        ('Perfiles Laborales Emergentes: Competencias para la Era Post-Digital', 'SENA  ·  20 h', 'Abr 2026'),
+        ('Tecnologías Disruptivas e Implementación de Negocios en la Era Digital', 'SENA + British Colombian Chamber of Commerce  ·  20 h', 'Abr 2026'),
+        ('Emprendimiento Sostenible: Desarrollo de Negocios', 'SENA  ·  80 h', 'Dic 2025'),
         ('IA para la Eficiencia Competitiva', 'SENA', '2025'),
     ]
 
