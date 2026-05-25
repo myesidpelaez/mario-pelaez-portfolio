@@ -51,25 +51,25 @@ def s(name, **kw):
     return ParagraphStyle(name, **kw)
 
 STYLES = {
-    'name':        s('name',        fontName='CalB', fontSize=26, textColor=WHITE,    leading=30, spaceAfter=1*mm),
-    'title_h':     s('title_h',     fontName='Seg',  fontSize=10.5, textColor=colors.HexColor('#C7D2FE'), leading=14, spaceAfter=0),
-    'contact_h':   s('contact_h',   fontName='Cal',  fontSize=9,  textColor=colors.HexColor('#A5B4FC'),  leading=12),
-    'section':     s('section',     fontName='CalB', fontSize=10, textColor=C_ACCENT, leading=13, spaceBefore=5*mm, spaceAfter=2*mm),
-    'body':        s('body',        fontName='Cal',  fontSize=9.5, textColor=BLACK,   leading=13.5, spaceAfter=1.5*mm, alignment=TA_JUSTIFY),
-    'body_s':      s('body_s',      fontName='Cal',  fontSize=9,  textColor=C_MID,   leading=12.5),
-    'proj_name':   s('proj_name',   fontName='CalB', fontSize=10.5, textColor=BLACK,  leading=13),
-    'proj_sub':    s('proj_sub',    fontName='CalI', fontSize=9,  textColor=C_GRAY,  leading=12, spaceAfter=1*mm),
-    'proj_body':   s('proj_body',   fontName='Cal',  fontSize=9.5, textColor=BLACK,   leading=13, spaceAfter=1*mm, alignment=TA_JUSTIFY),
-    'exp_role':    s('exp_role',    fontName='CalB', fontSize=10, textColor=BLACK,    leading=13),
-    'exp_company': s('exp_company', fontName='Cal',  fontSize=9,  textColor=C_GRAY,  leading=12, spaceAfter=1*mm),
-    'bullet':      s('bullet',      fontName='Cal',  fontSize=9.5, textColor=BLACK,   leading=13, leftIndent=10, firstLineIndent=-8),
-    'edu':         s('edu',         fontName='Cal',  fontSize=9.5, textColor=BLACK,   leading=13),
-    'edu_bold':    s('edu_bold',    fontName='CalB', fontSize=9.5, textColor=BLACK,   leading=13),
-    'chip':        s('chip',        fontName='Cal',  fontSize=8.5, textColor=C_CHIP_T, leading=11),
-    'tier_label':  s('tier_label',  fontName='CalB', fontSize=8,  textColor=C_ACCENT, leading=11, spaceAfter=1*mm),
-    'avail':       s('avail',       fontName='CalB', fontSize=9.5, textColor=C_ACCENT, leading=12),
-    'footer':      s('footer',      fontName='CalI', fontSize=8,  textColor=C_GRAY,  leading=10, alignment=TA_CENTER),
-    'url':         s('url',         fontName='Cal',  fontSize=8.5, textColor=C_ACCENT, leading=11),
+    'name':        s('name',        fontName='CalB', fontSize=26,   textColor=WHITE,    leading=30,   spaceAfter=1*mm),
+    'title_h':     s('title_h',     fontName='Seg',  fontSize=11,   textColor=colors.HexColor('#C7D2FE'), leading=14.5, spaceAfter=0),
+    'contact_h':   s('contact_h',   fontName='Cal',  fontSize=10,   textColor=colors.HexColor('#A5B4FC'),  leading=13.5),
+    'section':     s('section',     fontName='CalB', fontSize=11.5, textColor=C_ACCENT, leading=14.5, spaceBefore=4*mm, spaceAfter=2*mm),
+    'body':        s('body',        fontName='Cal',  fontSize=10.5, textColor=BLACK,    leading=15,   spaceAfter=1.5*mm, alignment=TA_JUSTIFY),
+    'body_s':      s('body_s',      fontName='Cal',  fontSize=10,   textColor=C_MID,    leading=14),
+    'proj_name':   s('proj_name',   fontName='CalB', fontSize=11,   textColor=BLACK,    leading=14),
+    'proj_sub':    s('proj_sub',    fontName='CalI', fontSize=10,   textColor=C_GRAY,   leading=13.5, spaceAfter=1*mm),
+    'proj_body':   s('proj_body',   fontName='Cal',  fontSize=10.5, textColor=BLACK,    leading=14.5, spaceAfter=1*mm, alignment=TA_JUSTIFY),
+    'exp_role':    s('exp_role',    fontName='CalB', fontSize=11,   textColor=BLACK,    leading=14),
+    'exp_company': s('exp_company', fontName='Cal',  fontSize=10,   textColor=C_GRAY,   leading=13.5, spaceAfter=1*mm),
+    'bullet':      s('bullet',      fontName='Cal',  fontSize=10.5, textColor=BLACK,    leading=15,   leftIndent=10, firstLineIndent=-8),
+    'edu':         s('edu',         fontName='Cal',  fontSize=10.5, textColor=BLACK,    leading=14.5),
+    'edu_bold':    s('edu_bold',    fontName='CalB', fontSize=10.5, textColor=BLACK,    leading=14.5),
+    'chip':        s('chip',        fontName='Cal',  fontSize=9.5,  textColor=C_CHIP_T, leading=13),
+    'tier_label':  s('tier_label',  fontName='CalB', fontSize=9.5,  textColor=C_ACCENT, leading=13,   spaceAfter=1*mm),
+    'avail':       s('avail',       fontName='CalB', fontSize=10.5, textColor=C_ACCENT, leading=13.5),
+    'footer':      s('footer',      fontName='CalI', fontSize=9,    textColor=C_GRAY,   leading=11,   alignment=TA_CENTER),
+    'url':         s('url',         fontName='Cal',  fontSize=9.5,  textColor=C_ACCENT, leading=12.5),
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -247,8 +247,8 @@ def build_stack():
         # Chips como texto plano separado por · (más ATS-friendly)
         items.append(Paragraph(
             '  '.join([f'<font color="#4F46E5">▪</font> {c}' for c in chips]),
-            ParagraphStyle('chips_inline', fontName='Cal', fontSize=9, textColor=BLACK,
-                           leading=14, spaceAfter=3*mm, leftIndent=4)
+            ParagraphStyle('chips_inline', fontName='Cal', fontSize=10, textColor=BLACK,
+                           leading=15, spaceAfter=3*mm, leftIndent=4)
         ))
 
     return items
@@ -358,8 +358,8 @@ def build_educacion():
     for title, inst, year in rows:
         row_table = Table(
             [[Paragraph(f'<b>{title}</b>  ·  {inst}', STYLES['edu']),
-              Paragraph(year, ParagraphStyle('y', fontName='Cal', fontSize=9, textColor=C_GRAY,
-                                             leading=12, alignment=TA_RIGHT))]],
+              Paragraph(year, ParagraphStyle('y', fontName='Cal', fontSize=10.5, textColor=C_GRAY,
+                                             leading=14.5, alignment=TA_RIGHT))]],
             colWidths=[CONTENT_W * 0.80, CONTENT_W * 0.20]
         )
         row_table.setStyle(TableStyle([
