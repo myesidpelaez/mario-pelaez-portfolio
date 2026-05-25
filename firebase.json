@@ -8,6 +8,10 @@
       ".gitignore",
       ".git/**",
       ".codex-screenshots/**",
+      ".claude/**",
+      ".firebase/**",
+      "build_cv.py",
+      "patch_*.py",
       "README.md"
     ],
     "headers": [
